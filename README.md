@@ -96,7 +96,7 @@ const moonPhase = getMoonPhase();
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## Semi-colons
+## Semi-Colons
 
 - Imports, variable declarations, and lines of code all end in a semi-colon.
 - However certain _blocks_ of code do not. This includes:
