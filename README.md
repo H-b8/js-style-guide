@@ -13,6 +13,7 @@
 ## Variables
 
 - Use `const` declarations for all variable and function names unless there is a possibility that it will be reassigned. In the case of reassignment, use `let`.
+- All variables should be in **lowerCamelCase**, with exceptions to variables and functions that come from packages and may contain snake_case
 - When naming variables and functions, make sure to to use clear descriptions of what that variable stores or does.
   - Boolean variables should begin with `is`. For example, `isRetro` reads as "is retro(grade) true?" 
 
