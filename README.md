@@ -110,18 +110,18 @@ const sweph = require('sweph');
 function celestialBodies(julianDayET, houseOrder) {
   for (let i = 0; i < cbData.length; i++) {
     const fullDegree = swephData[0];
-	  const speed = swephData[3];
-	  const cBody = ckObj(fullDegree, speed, cbData[i], houseOrder);
-	  celestialBodies.push(cBody);
-
-	  if (cbData[i].name === "true node") {
+    const speed = swephData[3];
+    const cBody = ckObj(fullDegree, speed, cbData[i], houseOrder);
+    celestialBodies.push(cBody);
+    
+    if (cbData[i].name === "true node") {
       let snFullDegree = cBody.fullDegree + 180;
       if (snFullDegree >= 360) snFullDegree -= 360;
       const snData = { name: "south node", type: "point" };
       let southNode = ckObj(snFullDegree, 0, snData, houseOrder);
       celestialBodies.push(southNode);
-	  }
-	}
+    }
+  }
 
   return celestialBodies;
 }
