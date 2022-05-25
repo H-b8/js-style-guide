@@ -18,7 +18,10 @@
   - Boolean variables should begin with `is`. For example, `isRetro` reads as "is retro(grade) true?" 
 
 ## Quotation Marks
-- Besides template literals and JSON test bodies, **single quotes** are used throughout JS code.
+- **Single quotes** are used throughout JS code, with the acception of
+  - Template literals
+  - JSON test bodies
+  - Strings containing an apostrophe or single quotes
 
 ## Conditionals
 
